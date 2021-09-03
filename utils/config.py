@@ -5,6 +5,7 @@ from functools import lru_cache
 class Settings(BaseSettings):
     client_id : str
     client_secret : str
+    sqlalchemy_database_url: str
     class Config:
         env_file = ".env"
 
